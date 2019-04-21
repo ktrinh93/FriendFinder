@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <h3>Friend Finder Survey</h3>
+        <hr>
+
+        <h4>About You:</h4>
+        <p>Name:<input type="text" id="name"></p>
+        <p>Photo URL:<input type="text" id="photo"></p>
+
+        <hr>
+        <h5>Question 1:</h5>
+        <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+        <select id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <h5>Question 2:</h5>
+        <p>Generally speaking, you rely more on your experience than your imagination.</p>
+        <select id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <h5>Question 3:</h5>
+        <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+        <select id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <h5>Question 4:</h5>
+        <p>You rarely do something just out of sheer curiosity.</p>
+        <select id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <h5>Question 5:</h5>
+        <p>People can rarely upset you.</p>
+        <select id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <h5>Question 6:</h5>
+        <p>It is often difficult for you to relate to other people’s feelings.</p>
+        <select id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <h5>Question 7:</h5>
+        <p>In a discussion, truth should be more important than people’s sensitivities.</p>
+        <select id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <h5>Question 8:</h5>
+        <p>You rarely get carried away by fantasies and ideas.</p>
+        <select id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <h5>Question 9:</h5>
+        <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+        </p>
+        <select id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <h5>Question 10:</h5>
+        <p>You feel more energetic after spending time with a group of people.</p>
+        <select id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+        </select>
+
+        <hr>
+        <button type="button" class="btn btn-primary" id="submit-button">Submit survey</button>
+
+        <hr>
+        <a href="/api/friends">API Friends List</a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your new friend: <span id="newBestFriend"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="bestFriendPic" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#submit-button").on("click", function () {
+            if (validForm()) {
+                var data = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        parseInt($("#q1").val()),
+                        parseInt($("#q2").val()),
+                        parseInt($("#q3").val()),
+                        parseInt($("#q4").val()),
+                        parseInt($("#q5").val()),
+                        parseInt($("#q6").val()),
+                        parseInt($("#q7").val()),
+                        parseInt($("#q8").val()),
+                        parseInt($("#q9").val()),
+                        parseInt($("#q10").val())
+                    ]
+                }
+
+                $.post(location.origin + "/api/friends", data, function (response) {
+                    $("#newBestFriend").text(response.name);
+                    $("#bestFriendPic").attr("src", response.photo);
+                    console.log(response);
+                    $("#exampleModal").modal("toggle");
+                });
+
+            }
+            else {
+                alert("Please fill out all questions before proceeding.");
+            }
+        });
+
+        function validForm() {
+            return ($("#name").val() != "" &&
+                $("#photo").val() != "" &&
+                $("#q1").val() != "" &&
+                $("#q2").val() != "" &&
+                $("#q3").val() != "" &&
+                $("#q4").val() != "" &&
+                $("#q5").val() != "" &&
+                $("#q6").val() != "" &&
+                $("#q7").val() != "" &&
+                $("#q8").val() != "" &&
+                $("#q9").val() != "" &&
+                $("#q10").val() != "");
+        }
+    </script>
+
+</body>
+
+</html>
